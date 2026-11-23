@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7F5">
+
+    <!-- Main scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <!-- Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="28dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CityMove"
+                        android:textColor="#234B3D"
+                        android:textSize="28sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Move smarter. Move freely."
+                        android:textColor="#727C76"
+                        android:textSize="13sp"
+                        android:layout_marginTop="3dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:gravity="center"
+                    android:text="B"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#234B3D"
+                    android:background="@drawable/circle_background" />
+
+            </LinearLayout>
+
+            <!-- Journey Planner Heading -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plan your journey"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#202B25"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Where would you like to go?"
+                android:textSize="14sp"
+                android:textColor="#7B857F"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Search Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:background="@drawable/card_background">
+
+                <!-- From -->
+                <EditText
+                    android:id="@+id/fromInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:hint="Starting point"
+                    android:textSize="15sp"
+                    android:textColor="#26342D"
+                    android:textColorHint="#8A948E"
+                    android:singleLine="true"
+                    android:paddingHorizontal="14dp"
+                    android:background="@drawable/input_background"
+                    android:inputType="textCapWords" />
+
+                <!-- Connector -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="↓"
+                    android:textSize="20sp"
+                    android:textColor="#668274"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp" />
+
+                <!-- To -->
+                <EditText
+                    android:id="@+id/toInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:hint="Destination"
+                    android:textSize="15sp"
+                    android:textColor="#26342D"
+                    android:textColorHint="#8A948E"
+                    android:singleLine="true"
+                    android:paddingHorizontal="14dp"
+                    android:background="@drawable/input_background"
+                    android:inputType="textCapWords" />
+
+                <!-- Search Button -->
+                <Button
+                    android:id="@+id/searchButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:text="Find routes"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/button_background"
+                    android:backgroundTint="@null"
+                    android:layout_marginTop="16dp"
+                    android:stateListAnimator="@null" />
+
+                <Button
+                    android:id="@+id/savedRoutesButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="Saved Routes"
+                    android:textColor="#315B47"
+                    android:textSize="16sp"
+                    android:backgroundTint="#EAF1EB"
+                    android:layout_marginTop="12dp"/>
+
+            </LinearLayout>
+
+            <!-- Nearby Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="14dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nearby transport"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#202B25" />
+
+                <TextView
+                    android:id="@+id/viewAllButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View all →"
+                    android:textSize="13sp"
+                    android:textColor="#426B57" />
+
+            </LinearLayout>
+
+            <!-- Metro Card -->
+            <LinearLayout
+                android:id="@+id/metroCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="17dp"
+                android:background="@drawable/card_background"
+                android:layout_marginBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:background="@drawable/icon_background">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M"
+                        android:textColor="#315B47"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Metro"
+                        android:textColor="#26342D"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nearest metro station"
+                        android:textColor="#7B857F"
+                        android:textSize="12sp"
+                        android:layout_marginTop="4dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore →"
+                    android:textSize="13sp"
+                    android:textColor="#426B57" />
+
+            </LinearLayout>
+
+            <!-- Bus Card -->
+            <LinearLayout
+                android:id="@+id/busCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="17dp"
+                android:background="@drawable/card_background"
+                android:layout_marginBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:background="@drawable/icon_background">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B"
+                        android:textColor="#315B47"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City buses"
+                        android:textColor="#26342D"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Routes and bus stops"
+                        android:textColor="#7B857F"
+                        android:textSize="12sp"
+                        android:layout_marginTop="4dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Explore →"
+                    android:textSize="13sp"
+                    android:textColor="#426B57" />
+
+            </LinearLayout>
+
+            <!-- Accessibility Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp"
+                android:background="@drawable/accessibility_background"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACCESSIBILITY"
+                    android:textColor="#315B47"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Travel with confidence."
+                    android:textColor="#26342D"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Find stations with elevators, ramps and accessible facilities."
+                    android:textColor="#66766C"
+                    android:textSize="13sp"
+                    android:layout_marginTop="6dp" />
+
+                <Button
+                    android:id="@+id/accessibilityButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:text="Explore accessibility →"
+                    android:textColor="#315B47"
+                    android:textSize="13sp"
+                    android:background="@drawable/outlined_button"
+                    android:backgroundTint="@null"
+                    android:layout_marginTop="12dp"
+                    android:stateListAnimator="@null" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="⌂\nHome"
+            android:textColor="#315B47"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/navExplore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="⌕\nExplore"
+            android:textColor="#7B857F"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/navSaved"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="♡\nSaved"
+            android:textColor="#7B857F"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="○\nProfile"
+            android:textColor="#7B857F"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

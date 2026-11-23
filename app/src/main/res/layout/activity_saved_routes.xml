@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7F5"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/savedBackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="←  Back"
+        android:textColor="#315B47"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saved routes"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1D2922"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your favourite journeys, all in one place."
+        android:textSize="14sp"
+        android:textColor="#777777"
+        android:paddingTop="6dp"
+        android:paddingBottom="24dp"/>
+
+    <LinearLayout
+        android:id="@+id/savedRoutesContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:id="@+id/emptyStateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No saved routes yet.\nSave a journey to find it here."
+        android:textColor="#777777"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:padding="32dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

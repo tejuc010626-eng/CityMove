@@ -1,0 +1,335 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Back -->
+        <TextView
+            android:id="@+id/detailBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←  Back"
+            android:textColor="#315B47"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="20dp"/>
+
+        <!-- Heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Route details"
+            android:textColor="#1D2922"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/detailJourneySummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your journey"
+            android:textColor="#66736A"
+            android:textSize="15sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Journey overview -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RECOMMENDED ROUTE"
+                android:textColor="#315B47"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="35 min"
+                android:textColor="#1D2922"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estimated travel time"
+                android:textColor="#66736A"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EST. FARE"
+                        android:textColor="#66736A"
+                        android:textSize="11sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/detailFare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹30"
+                        android:textColor="#1D2922"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="6dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TRANSFERS"
+                        android:textColor="#66736A"
+                        android:textSize="11sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="#1D2922"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="6dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Timeline heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your journey"
+            android:textColor="#1D2922"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Timeline -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="18dp">
+
+            <!-- Start -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="●  START"
+                android:textColor="#315B47"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/detailStartLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Starting point"
+                android:textColor="#1D2922"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+            <!-- Walking -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="│"
+                android:textColor="#AAB9AD"
+                android:textSize="24sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🚶  Walk · 5 min"
+                android:textColor="#66736A"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Walk to the nearest metro station."
+                android:textColor="#66736A"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"/>
+
+            <!-- Metro -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="│"
+                android:textColor="#AAB9AD"
+                android:textSize="24sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🚇  METRO"
+                android:textColor="#315B47"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/detailMetroStation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Board at nearest station"
+                android:textColor="#1D2922"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Travel towards your destination."
+                android:textColor="#66736A"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"/>
+
+            <!-- Transfer -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="│"
+                android:textColor="#AAB9AD"
+                android:textSize="24sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="↔  TRANSFER"
+                android:textColor="#66736A"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change lines if required."
+                android:textColor="#66736A"
+                android:textSize="14sp"
+                android:layout_marginTop="6dp"/>
+
+            <!-- End -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="│"
+                android:textColor="#AAB9AD"
+                android:textSize="24sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="●  DESTINATION"
+                android:textColor="#315B47"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/detailEndLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Destination"
+                android:textColor="#1D2922"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Accessibility card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/accessibility_background"
+            android:padding="18dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Accessibility"
+                android:textColor="#315B47"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check for elevators, ramps, step-free access and accessible station facilities before travelling."
+                android:textColor="#526358"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Save route -->
+        <Button
+            android:id="@+id/saveRouteButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Save this route"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@null"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

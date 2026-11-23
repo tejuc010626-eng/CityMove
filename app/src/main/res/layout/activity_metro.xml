@@ -1,0 +1,207 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/metroBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←  Back"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#315B47"
+            android:paddingBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bengaluru Metro"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1D2922"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Navigate the city with Namma Metro"
+            android:textSize="14sp"
+            android:textColor="#777777"
+            android:paddingTop="6dp"
+            android:paddingBottom="20dp"/>
+
+        <!-- Metro Overview -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#EAF1EB"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="METRO NETWORK"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#315B47"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Travel faster.\nSkip the traffic."
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#1D2922"
+                android:paddingTop="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Explore metro lines, stations and connections across Bengaluru."
+                android:textSize="14sp"
+                android:textColor="#526258"
+                android:paddingTop="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Lines Heading -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Metro lines"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1D2922"
+            android:paddingTop="24dp"
+            android:paddingBottom="12dp"/>
+
+        <!-- Purple Line -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp">
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="match_parent"
+                android:background="#7B4BAA"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Purple Line"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#1D2922"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="East – West corridor"
+                    android:textSize="14sp"
+                    android:textColor="#777777"
+                    android:paddingTop="6dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Whitefield  ↔  Challaghatta"
+                    android:textSize="14sp"
+                    android:textColor="#315B47"
+                    android:paddingTop="8dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Green Line -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp">
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="match_parent"
+                android:background="#34865B"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="14dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Green Line"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#1D2922"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="North – South corridor"
+                    android:textSize="14sp"
+                    android:textColor="#777777"
+                    android:paddingTop="6dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Madavara  ↔  Silk Institute"
+                    android:textSize="14sp"
+                    android:textColor="#315B47"
+                    android:paddingTop="8dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Quick Information -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Travel information"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1D2922"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="•  Check station connectivity\n\n•  Plan interchanging journeys\n\n•  Find stations near your destination\n\n•  Combine metro and bus journeys"
+            android:textSize="15sp"
+            android:textColor="#526258"
+            android:background="#FFFFFF"
+            android:padding="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

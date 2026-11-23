@@ -1,0 +1,199 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Back Button -->
+
+        <TextView
+            android:id="@+id/busBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="←  Back"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#315B47"
+            android:paddingBottom="20dp"/>
+
+        <!-- Heading -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="City Buses"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1D2922"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Explore Bengaluru by bus"
+            android:textSize="14sp"
+            android:textColor="#777777"
+            android:paddingTop="6dp"
+            android:paddingBottom="20dp"/>
+
+        <!-- Overview Card -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#EAF1EB"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUS NETWORK"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="#315B47"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your city.\nYour connection."
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#1D2922"
+                android:paddingTop="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discover bus routes, stops and connections to reach your destination."
+                android:textSize="14sp"
+                android:textColor="#526258"
+                android:paddingTop="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Bus Services -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus services"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1D2922"
+            android:paddingTop="24dp"
+            android:paddingBottom="12dp"/>
+
+        <!-- Ordinary Bus -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ordinary services"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1D2922"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Affordable everyday travel across the city."
+                android:textSize="14sp"
+                android:textColor="#777777"
+                android:paddingTop="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Express Bus -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Express services"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1D2922"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Faster journeys with limited stops on selected routes."
+                android:textSize="14sp"
+                android:textColor="#777777"
+                android:paddingTop="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Airport Bus -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Airport services"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#1D2922"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dedicated bus services connecting the city and airport."
+                android:textSize="14sp"
+                android:textColor="#777777"
+                android:paddingTop="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Travel Tips -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Travel information"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1D2922"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="•  Find nearby bus stops&#10;&#10;•  Explore routes and destinations&#10;&#10;•  Plan bus-to-metro connections&#10;&#10;•  Discover alternative journeys"
+            android:textSize="15sp"
+            android:textColor="#526258"
+            android:background="#FFFFFF"
+            android:padding="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
